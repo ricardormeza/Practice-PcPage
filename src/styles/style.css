@@ -1,0 +1,310 @@
+:root{
+    --color-negro:#141414;
+    --color-texto:#1f1f1f;
+    --color-texto2:#9a9a9a;
+    --color-texto3:#0066cc;
+    --color-boton:#0071e3;
+    --letra-color1:#10505b;
+    --letra-color2:#d48207;
+    --letra-color3:#e36942;
+    --letra-color4:#b72c31;
+    --letra-color5:#353a71;
+    --letra-color6:#25476d;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--main-bg-color);
+    /* margin-top: 5rem; */
+}
+h1,h2,h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    color: var(--color-negro);
+    text-align: center;
+    margin: 0;
+    padding:0;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+/* header */
+.global-nav{
+    /* position: absolute;
+    display: block;*/
+    margin: 0;
+    height: 4rem;
+    background-color:var(--color-negro);
+    
+}
+.global-nav_content .logoMac{
+    background-image: url(../img/apple1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    height: 20px;
+    width: 20px;
+}
+.global-nav_content ul{
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    color: var(--color-texto2);
+    justify-content: space-around;
+    padding-top: 8px;
+    
+}
+.global-nav_content li{
+    list-style: none;
+    display: flex;
+}
+.global-nav_content li a{
+    color: var(--color-texto2);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    padding-top: 2rem;
+    height: 100px;
+    border-bottom: 1px solid green;
+}
+.title a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 2rem;
+    display: flex;
+}
+.title a:hover{
+    cursor: pointer;
+    color: var(--color-texto3);
+}
+.title_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    
+}
+.title_menu{
+    
+}
+/* main */
+.main{
+    height: 600px;
+}
+.imac-hero{
+    background-image: url(../img/hero_mac.jpg);
+    
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.text-color-p{
+    font-size: 5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+}
+.color-green{
+    color: var(--letra-color1);
+}
+.color-yellow{
+    color: var(--letra-color2);
+}
+.color-orange{
+    color: var(--letra-color3);
+}
+.color-pink{
+    color: var(--letra-color4);
+}
+.color-purple{
+    color: var(--letra-color5);
+}
+.color-blue{
+    color: var(--letra-color6);
+}
+.text-color-p-price{
+    text-align: center;
+    font-size: 4rem;
+}
+.text-color-p-order{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-texto2);
+}
+.text-color-section_link{
+    width: 60%;
+    padding: 30px;
+}
+.link-e{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.link-e li{
+    list-style: none;
+}
+.link-e a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-boton);
+}
+.link-e a:hover{
+    color: var(--letra-color2);
+}
+/* imace section */
+.imac-section{
+    padding: 3rem;
+}
+.imac-section-content{
+    width: 60%;
+}
+.imac-section-content{
+    font-size: 6rem;
+}
+.span-color{
+    background: -webkit-linear-gradient(#090979, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.imac-section-content p{
+    margin: 0;
+}
+.imac-section-image{
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+.imac-section-image img{
+    border-radius: 8px;
+}
+/* componentes */
+.componentes{
+    display: grid;
+    grid-template-areas:  "one two" 
+                "one three"
+                "four four"
+                "four four";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.componentes-items-one{
+    grid-area: one;
+}
+.color-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    width: 100%;
+    height: 100%;
+}
+.componentes-items-two{
+    grid-area: two;
+}
+.componentes-items-three{
+    grid-area: three;
+}
+.componentes-items-four{
+    grid-area: four;
+    
+}
+.componentes-items-four img{
+    width: 95%;
+}
+
+/* seccion 5*/
+.seccion-5{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.headLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 160px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.headline_text{
+    text-align: center;
+    margin: -300px;
+}
+.headline_text h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.headline_text a{
+    text-decoration: none;
+    color: var(--color-texto3);
+    font-size: 3rem;
+} 
+.seccion-5_img{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.seccion-5-textoI{
+    display: block;
+    position: relative;
+    width: 75px;
+    top: -340px;
+    left: 230px;
+    font-weight: bold;
+}
+.seccion-5-textoD{
+    display: block;
+    position: relative;
+    width: 75px;
+    top: -340px;
+    left: 930px;
+    font-weight: bold;
+    margin:0;
+    
+}
+/* pc naranja*/
+.pc-naranja_img{
+    margin-top: 12rem;
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    height: 450px;
+} 
+/* footer */
+.footer{
+    margin: 0 auto;
+    padding: 0%;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--color-texto2);
+    background-color: var(--color-negro);
+}
+.footer p{
+    margin: 0;
+}
